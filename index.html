@@ -59,78 +59,14 @@
                     class="navbar-nav d-flex align-items-lg-center gap-5 gap-lg-1 gap-xl-4 gap-xxl-7 py-2 py-lg-0 ms-2 ms-xl-10 ms-xxl-20 ps-0 ps-xxl-10 align-self-center"
                   >
                     <li class="dropdown">
-                      <a href="index.html" class="fs-ten">Home</a>
+                      <a href="/" class="fs-ten">Home</a>
                     </li>
-                    <li class="dropdown show-dropdown">
-                      <button
-                        type="button"
-                        aria-label="Navbar Dropdown Button"
-                        class="dropdown-toggle dropdown-nav d-flex align-items-center fs-ten"
-                      >
-                        Invest <i class="ti ti-chevron-down"></i>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-ten" href="staking.html"
-                            >Investment Pool</a
-                          >
-                        </li>
-                        <!-- <li>
-                          <a
-                            class="dropdown-item fs-ten"
-                            href="staking-details.html"
-                            >Pool details</a
-                          >
-                        </li> -->
-                      </ul>
-                    </li>
-                    <li class="dropdown show-dropdown">
-                      <button
-                        type="button"
-                        aria-label="Navbar Dropdown Button"
-                        class="dropdown-toggle dropdown-nav d-flex align-items-center fs-ten"
-                      >
-                        Learn <i class="ti ti-chevron-down"></i>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-ten" href="ido.html"
-                            >Courses</a
-                          >
-                        </li>
-                        <!-- <li>
-                          <a class="dropdown-item fs-ten" href="idodetails.html"
-                            >IDO Details</a
-                          >
-                        </li> -->
-                      </ul>
+                    <li class="dropdown">
+                      <a href="/courses/" class="fs-ten">Courses</a>
                     </li>
                     <li class="dropdown">
                       <a href="/rewards/" class="fs-ten">Rewards</a>
                     </li>
-                    <!-- <li class="dropdown show-dropdown">
-                      <button
-                        type="button"
-                        aria-label="Navbar Dropdown Button"
-                        class="dropdown-toggle dropdown-nav d-flex align-items-center fs-ten"
-                      >
-                        Rewards<i class="ti ti-chevron-down"></i>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item fs-ten" href="buycrypto.html"
-                            >Buy Crypto</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item fs-ten"
-                            href="pricing-plan.html"
-                            >Pricing plan</a
-                          >
-                        </li>
-                      </ul>
-                    </li> -->
                     <li class="dropdown show-dropdown">
                       <button
                         type="button"
@@ -140,25 +76,7 @@
                         More<i class="ti ti-chevron-down"></i>
                       </button>
                       <ul class="dropdown-menu">
-                        <!-- <li>
-                          <a class="dropdown-item fs-ten" href="rewards.html"
-                            >Rewards</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item fs-ten"
-                            href="blgoresource.html"
-                            >Blog</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item fs-ten"
-                            href="blogdetails.html"
-                            >Blog details</a
-                          >
-                        </li> -->
+                        
                         <li>
                           <a class="dropdown-item fs-ten" href="contact-us.html"
                             >Contact us</a
@@ -171,11 +89,7 @@
                             >Terms & condition</a
                           >
                         </li>
-                        <!-- <li>
-                          <a class="dropdown-item fs-ten" href="404.html"
-                            >Error</a
-                          >
-                        </li> -->
+                       
                       </ul>
                     </li>
                   </ul>
@@ -240,7 +154,9 @@
         </div>
       </div>
     </header>
-    <!-- Modal Start -->
+    <!-- header-section end -->
+
+    <!-- Wallets Modal Start -->
     <div class="modal_areastyle">
       <!-- Modal -->
       <div
@@ -267,26 +183,36 @@
             </div>
             <div class="modal-body">
               <a
-                href="javascript:void(0)"
+                href="/metamask/"
                 class="modal_areastyle__item rounded-3 br2 px-3 px-md-4 py-2 py-md-3 d-flex align-items-center justify-content-between mb-5 mb-md-6"
               >
                 <span class="fw_500">Conntect with Metamask</span>
                 <img src="assets/images/icon/dog.png" alt="Icon" />
               </a>
               <a
-                href="javascript:void(0)"
+                href="/coinbase/"
+                class="modal_areastyle__item rounded-3 br2 px-3 px-md-4 py-2 py-md-3 d-flex align-items-center justify-content-between mb-5 mb-md-6"
+              >
+                <span class="fw_500">Conntect with Coinbase</span>
+                <img src="assets/images/icon/wallet-connect.png" alt="Icon" />
+              </a>
+              <a
+                href="/trustwallet/"
                 class="modal_areastyle__item rounded-3 br2 px-3 px-md-4 py-2 py-md-3 d-flex align-items-center justify-content-between"
               >
-                <span class="fw_500">Conntect with Metamask</span>
-                <img src="assets/images/icon/wallet-connect.png" alt="Icon" />
+                <span class="fw_500">Conntect with Trust Wallet</span>
+                <img
+                  width="28px"
+                  src="assets/images/icon/trust-wallet.png"
+                  alt="Icon"
+                />
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal End -->
-    <!-- header-section end -->
+    <!-- Wallets Modal End -->
 
     <!-- Hero Section Starts -->
     <section class="hero_area pt-120 pb-16 position-relative">
@@ -310,17 +236,20 @@
               <div
                 class="d-flex align-items-center justify-content-center flex-wrap gap-4 gap-md-6 mb-10 mb-md-13 wow fadeInUp"
               >
-                <a
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   class="hero_area__content-btnone cmn-btn px-6 px-md-8 py-3 d-center gap-3"
-                  href="buycrypto.html"
-                  >Get Started
+                  type="button"
+                >
+                  Connect Wallet
                   <i
                     class="ti ti-chevron-right fs-five px-1 bg4-color p6-color rounded-3 fw-bolder"
                   ></i>
-                </a>
+                </button>
                 <a
                   class="hero_area__content-btntwo cmn-btn third-alt px-6 px-md-8 py-3 d-center gap-3"
-                  href="staking.html"
+                  href="/about-us/"
                   >Explore
                   <i
                     class="ti ti-chevron-right fs-five px-1 bg2-color rounded-3 fw-bolder"
@@ -2698,7 +2627,7 @@
       </div>
     </section>
     <!-- Ready to Exchange Ends -->
-     
+
     <!-- Rewards FAQs Starts -->
     <section class="rewards_faq pt-120 pb-120 position-relative">
       <div class="container">
