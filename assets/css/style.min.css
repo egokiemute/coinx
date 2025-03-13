@@ -4526,3 +4526,18 @@ input[type="radio"] {
   background-size: cover;
   background-repeat: no-repeat;
 } /*# sourceMappingURL=style.min.css.map */
+
+#success-message {
+  background-color: #e50f0f;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+#error-message {
+  background-color: #d90909;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}

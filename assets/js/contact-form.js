@@ -45,7 +45,7 @@ async function handleFormSubmit(e) {
 
         if (response.status === 200) {
             successMessage.textContent =
-                "Thank you for your message. We will reply to you shortly!";
+                "Something went wrong! Please try again later.";
             successMessage.classList.remove("d-none");
             errorMessage.classList.add("d-none");
             e.target.reset();
